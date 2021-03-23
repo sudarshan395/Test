@@ -8,6 +8,15 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "bootstrap"
+import "chart.js";
+import "datatables";
+import "jquery";
+import "jquery-easing";
+
+import "../css/application.scss";
+
+const images = require.context('../img', true)
+const imagePath = (name) => images(name, true
 
 Rails.start()
 Turbolinks.start()
